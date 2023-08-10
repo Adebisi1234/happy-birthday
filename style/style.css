@@ -7,6 +7,13 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    color:white;
+    background-color: black;
+  }
+}
+
 .container {
   height: 100vh;
   width: 100vh;
@@ -122,11 +129,18 @@ body {
   height: auto;
 }
 
+.six .lydia-dp {
+  max-width: 470px;
+  height: 470px;
+  object-fit: cover;
+}
+
 .six .hat {
   position: absolute;
   width: 80px;
-  top: -35px;
-  left: 41.5%;
+  top: -100px;
+  rotate: 35deg;
+  left: 61.5%;
   /* transform: scale(0.1); */
 }
 
@@ -233,29 +247,29 @@ body {
 }
 
 /* Media Queries */
-@media screen and (max-height: 1000px) {
+/* @media screen and (max-width: 1000px) {
   .six .hat {
     left: 40%;
   }
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (max-width: 800px) {
   .six .hat {
     left: 37%;
   }
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-width: 700px) {
   .six .hat {
     left: 32%;
   }
 }
 
-@media screen and (max-height: 850px) and (max-width: 450px) {
+@media screen and (max-width: 850px) and (max-width: 450px) {
   .six .hat {
     left: 32%;
   }
-}
+} */
 
 @media screen and (max-width: 500px) {
   .container {
@@ -281,7 +295,8 @@ body {
 
   .six .hat {
     width: 50px;
-    top: -20px;
+    top: -60px;
+    left: 70.5%;
   }
 
   .wish-hbd {
